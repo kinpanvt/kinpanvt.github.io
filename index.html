@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Resume</title>
+    <title>Kinjal Pandey - Professional Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles */
+        body, h1, h2, ul, p {
             margin: 0;
             padding: 0;
+        }
+        /* Apply background color and font family */
+        body {
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
         }
+        /* Style the header */
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
+        /* Style the navigation bar */
         nav {
             display: flex;
             justify-content: center;
@@ -31,23 +38,40 @@
         nav a:hover {
             text-decoration: underline;
         }
+        /* Style the sections */
         section {
             padding: 2em;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 2em auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        /* Style the footer */
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
+        /* Add a "back to top" button */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Job Title or Profession</p>
+        <h1>Kinjal Pandey</h1>
+        <p>Computer Science Student at Virginia Tech</p>
     </header>
 
     <nav>
@@ -59,30 +83,68 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Your bio here. Describe your background, expertise, and other relevant details.</p>
+        <p>A passionate Computer Science student at Virginia Tech with a keen interest in AI projects and community engagement. Committed to leveraging technical skills and creativity to develop innovative solutions for real-world problems.</p>
     </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
-        <p>Detail your professional experiences here. Use bullet points or separate paragraphs for different roles.</p>
+        <ul>
+            <li>Upper Class Leader at Design Challenge Team, Virginia Tech Center for the Enhancement of Engineering Diversity</li>
+            <li>Peer Mentor, VT Summer Start</li>
+            <li>President, CommonWEALTH of Scholars</li>
+            <li>President, International Student Support Team</li>
+        </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>Highlight some of your significant projects here. Include images, descriptions, and links to live projects or code repositories.</p>
+        <ul>
+            <li>Prosthetic Hand (Jul 2022 - Nov 2022)</li>
+            <li>AI Calendar Scheduler App (Ongoing)</li>
+            <li>Neurodivergent Network Platform (Ongoing)</li>
+        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Provide ways for visitors to contact you. This could include an email form (requires backend code), or direct links to your social profiles and email.</p>
+        <p>Blacksburg, Virginia<br>7373204973<br><a href="mailto:kinjalpandey@vt.edu">kinjalpandey@vt.edu</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2023 by Your Name. All rights reserved.</p>
+        <p>&copy; 2023 by Kinjal Pandey. All rights reserved.</p>
     </footer>
 
+    <div id="back-to-top">↑</div>
+
     <script>
-        // Any custom JavaScript functionality can be added here
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // "Back to top" button functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 </html>
