@@ -6,11 +6,11 @@ body, h1, h2, ul, p {
 /* Apply background color and font family */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFE4C4;
+    background-color: #fbf3ea;
 }
 /* Style the header */
 header {
-    background-color: #333;
+    background-color: #CF4420;  /* Updated header color */
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -19,7 +19,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #630031;
     padding: 0.5em;
 }
 nav a {
@@ -39,6 +39,16 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+/* Add more space between headers and their descriptions */
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Add more space between bullet points */
+section ul li {
+    margin-bottom: 10px;
+}
+
 /* Style the bullet points */
 ul {
     list-style: none;
@@ -47,16 +57,44 @@ ul {
 ul li:before {
     content: '•';
     margin-right: 10px;
-    color: #333;
+    color: #CF4420;
     font-size: 1.5em;
     line-height: 0.5em;
 }
+/* Style each job section */
+.job {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.job h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.job h4 {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #8B4513;
+}
+.job p {
+    margin-bottom: 0.5em;
+}
+.job ul {
+    margin-bottom: 0.5em;
+}
+
+
 /* Style the footer */
 footer {
-    background-color: #333;
+    background-color: #CF4420;
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    color: black;
+    text-decoration: none;
 }
 /* Add a "back to top" button */
 #back-to-top {
@@ -64,7 +102,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #333;
+    background: #CF4420;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
