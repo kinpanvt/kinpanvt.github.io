@@ -39,3 +39,28 @@ if (backToTopBtn) {
         });
     });
 }
+
+
+// Dropdown functionality
+document.querySelectorAll('.dropbtn').forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        var content = this.nextElementSibling;
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+    var isClickInsideAnyDropdown = Array.from(document.querySelectorAll('.dropdown')).some(dropdown => dropdown.contains(event.target));
+
+    if (!isClickInsideAnyDropdown) {
+        document.querySelectorAll('.dropdown-content').forEach(dropdownContent => {
+            dropdownContent.style.display = 'none';
+        });
+    }
+});
