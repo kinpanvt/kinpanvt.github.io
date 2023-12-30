@@ -3,7 +3,11 @@ body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
 }
+h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
 
+}
 /* Apply background color and font family */
 body {
     font-family: 'Roboto', sans-serif;
@@ -211,4 +215,51 @@ footer {
     font-size: 14px;
     border: none;
     cursor: pointer;
+}
+
+.course-lists {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.course-lists ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-lists ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.licenses-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.license-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.license-item {
+    margin-bottom: 20px; /* Space between each item */
+    text-align: center;
+}
+
+.license-img {
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px; /* Optional, for rounded corners */
+    margin-bottom: 10px; /* Space between image and caption */
+}
+
+figcaption {
+    margin-bottom: 5px;
 }
