@@ -108,3 +108,60 @@ footer {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.padded-paragraph {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 2em;
+}
+
+.left-aligned-img {
+    width: 50%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.figure-style {
+    margin-right: 20px;
+    margin-left: 0px;
+    width: 300%;
+    max-width: 200px; /* Adjust as needed */
+}
+
+.figure-style img {
+    width: 100%;
+    display: block; /* Ensures no extra space below the image */
+}
+
+.figure-style figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start; /* Align to start for smaller screens */
+    }
+
+    .left-aligned-img {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+
+    .figure-style {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}

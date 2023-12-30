@@ -12,21 +12,38 @@ h1, h2, h3 {
     font-family: 'Georgia', serif;
 }
 
-h3, h4 {
-    padding-left: 20px;   /* Adjust this value as needed */
-    padding-right: 20px;  /* Adjust this value as needed */
+h3, h4, h5 {
+    padding-left: 80px;   /* Adjust this value as needed */
+    padding-right: 80px;  /* Adjust this value as needed */
 }
 a.reference {
-    padding: 10px; /* Adjust the value as needed */
+    padding: 80px; /* Adjust the value as needed */
     /* Other styling properties */
 }
 
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+.image-container {
+    width: 100%; /* or any specific width */
+    margin: auto;
+    text-align: center; /* Center the container */
+}
+.image-container img {
+    width: 50%; /* or any specific size */
+    margin: 10px 0; /* Spacing between images */
+}
+
+.image-container img:nth-child(odd) {
+    float: left;
+}
+
+.image-container img:nth-child(even) {
+    float: right;
 }
 
 .section {
@@ -82,8 +99,8 @@ nav a:hover, footer a:hover {
 
 .eventualists-text {
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* MeAsmi Specific Styles */
@@ -94,23 +111,23 @@ nav a:hover, footer a:hover {
 
 .measmi-img {
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .measmi-text {
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .measmi-video {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 10 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     border-radius: 10px;  /* Optional, for rounded corners */
 }
 
@@ -122,14 +139,14 @@ nav a:hover, footer a:hover {
 
 .prosthetic-img {
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .prosthetic-text {
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .prosthetic-video {
@@ -137,8 +154,8 @@ nav a:hover, footer a:hover {
     height: auto;
     display: block;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     border-radius: 10px;  /* Optional, for rounded corners */
 }
 
