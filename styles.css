@@ -297,3 +297,9 @@ section {
         width: 100%;
     }
 }
+
+.license-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Ensure the text color remains the same */
+}
