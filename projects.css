@@ -87,17 +87,17 @@ nav a:hover, footer a:hover {
 }
 
 
-/* Eventualists Specific Styles */
-.eventualists-header {
+/* Calendai Specific Styles */
+.calendai-header {
     color: #000000;
     text-align: center;
 }
 
-.eventualists-img {
+.calendai-img {
     border-radius: 10px;
 }
 
-.eventualists-text {
+.calendai-text {
     text-align: justify;
     padding-left: 80px;
     padding-right: 80px;

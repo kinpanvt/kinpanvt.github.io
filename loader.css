@@ -1,0 +1,54 @@
+/* Full-screen loading overlay */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818; /* Dark, classic background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    z-index: 9999;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Rotating Circular Spinner */
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #CF4420; /* Classic accent color */
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    margin-bottom: 15px;
+}
+
+/* Fade-out animation when loading is done */
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Text styling */
+.loading-text {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.8;
+    animation: fadeText 1.5s infinite alternate;
+}
+
+/* Smooth spinning animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Fading text animation */
+@keyframes fadeText {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
