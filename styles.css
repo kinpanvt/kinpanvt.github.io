@@ -9,17 +9,30 @@ h2 {
     padding-bottom: 15px;
 }
 
+/* Ensure visited links inherit their original color */
+a:visited {
+    color: inherit;
+}
+
+/* Make images and videos fully responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Global typography and overall background */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1c1c1c; /* Dark grey overall background */
+    background-color: #4a4949; /* Dark grey overall background */
     color: #d3d3d3; /* Light grey text */
     line-height: 1.6;
 }
 
 /* Header styling */
 header {
-    background-color: #800000; /* Maroon */
+    background-color: #fa7000; /* Dark orange (refined accent) */
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
@@ -29,19 +42,19 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #1c1c1c; /* Matches overall background */
+    background-color: #1c1c1c; /* Deep blackish background for nav */
     padding: 0.5em;
 }
 
 nav a {
-    color: #FFA500; /* Orange links */
+    color: #FFA500; /* Sleek orange links */
     margin: 0 10px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #800000; /* Maroon on hover */
+    color: #800000; /* Dark maroon on hover */
 }
 
 /* Main Sections */
@@ -93,15 +106,24 @@ ul li:before {
 
 .job h4 {
     font-size: 1em;
-    color: #FFA500; /* Use orange accent for subheadings */
+    color: #FFA500; /* Orange accent for subheadings */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #800000; /* Maroon */
+    background-color: #fa7000; /* Dark orange/maroon */
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
+}
+
+/* Footer Links */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:visited {
+    color: #ffffff;
 }
 
 /* Back to Top Button */
@@ -306,4 +328,26 @@ figcaption {
     display: block;
     text-decoration: none;
     color: inherit;
+}
+
+/* Blog Container for Page Content */
+.blog-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Override email and reference links to appear white */
+a[href^="mailto:"],
+a.reference {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:hover,
+a.reference:hover {
+  color: #ffffff !important;
 }

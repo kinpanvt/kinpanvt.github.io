@@ -1,72 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalendAI: AI-Driven Application Development in Human-Computer Interaction</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./projects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalendAI: AI-Driven Application Development in Human-Computer Interaction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="calendai-page">
-    <nav>
-        <a href="home.html#about">About</a>
-        <a href="home.html#experience">Experience</a>
-        <a href="home.html#projects">Projects</a>
-        <a href="home.html#contact">Contact</a>
-        <a href="prosthetichand.html">Prosthetic Hand</a>
-        <a href="calendai.html">CalendAI</a>
-        <a href="measmi.html">MeAsmi</a>
-    </nav>
-    <h1 class="calendai-header">Project Exploration: CalendAI</h1>
-    <h2 class="calendai-header">Role: Principal Developer</h2>
-
-    <p class="calendai-text">In my pursuit of a Computer Science degree with a specialization in Artificial Intelligence and Machine Learning, I led a critical initiative, CalendAI, under the mentorship of Dr. Andrew Kulak. This venture was an integral component of an advanced Human-Computer Interaction course, where my leadership was instrumental in navigating through intricate problem-solving scenarios.</p>
-    <img class="calendai-img" src="images/calendai.png" alt="Project Introduction">
-
-    <h3>Technical Contributions and Milestones</h3>
-
-    <h4>Development of an AI-Infused Calendar Application</h4>
-    <p class="calendai-text">Within the CalendAI framework, my primary responsibility was the architectural design and development of an AI-centric calendar application, specifically tailored to the needs of Computer Science students. This application amalgamated functionalities with platforms like Canvas, GrubHub, and GobblerConnect, employing sophisticated AI algorithms to revolutionize time management and optimize scheduling processes.</p>
-    <img class="calendai-img" src="images/even_cal.png" alt="Calendar Application Development">
-
-    <h4>Advanced Machine Learning Techniques</h4>
-    <p class="calendai-text">My expertise was pivotal in the integration of machine learning methodologies to meticulously analyze user behavioral data and generate custom routine suggestions. The crux of this endeavor involved crafting algorithms adept at deciphering and forecasting user preferences, significantly amplifying the user engagement and satisfaction within an e-commerce framework.</p>
-    <img class="calendai-img" src="images/flow_1.png" alt="Project Introduction">
-
-    <h4>Enhancement of Multi-Modal Search Algorithms</h4>
-    <p class="calendai-text">A crucial aspect of my role was the refinement of multi-modal search algorithms, ensuring that the application's search functionality aligned with top-tier industry benchmarks, thereby furnishing an intuitive and streamlined search experience for a broad user demographic.</p>
-    <img class="calendai-img" src="images/wire_1.png" alt="Project Introduction">
-    <img class="calendai-img" src="images/wire_2.png" alt="Project Introduction">
-
-    <h4>Collaborative Ingenuity and Analytical Problem-Solving</h4>
-    <p class="calendai-text">Engaging in a multifaceted team environment, I spearheaded efforts to resolve complex issues such as balancing supply-demand dynamics and addressing business inception challenges, utilizing advanced machine learning models. These initiatives not only augmented the app’s operational efficiency but also propelled its trajectory towards sustainable business evolution.</p>
-
-
-    <h4>User-Driven Design and Empirical Testing</h4>
-    <p class="calendai-text">My approach was anchored in a user-driven philosophy, where extensive testing and heuristic evaluations were conducted. This rigorous analysis was vital in refining the application's user interface and functionality, ensuring optimal usability, accessibility, and alignment with a diverse spectrum of user requirements.</p>
-
-    <h4>Demonstration of Advanced Coding Skills</h4>
-    <p class="calendai-text">Throughout the project, my application of programming languages like Python and Java was indicative of an advanced skillset in software development, blending creativity with technical acumen.</p>
-
-
-    <h4>Cross-Disciplinary Expertise and Flexibility</h4>
-    <p class="calendai-text">The success of the CalendAI project hinged on the harmonious integration of machine learning, software engineering, and human-computer interaction principles. My ability to adeptly navigate and excel in this multifaceted environment highlighted not only technical versatility but also intellectual agility.</p>
-   
-
-    <h4>Conclusion</h4>
-
-    <p class="calendai-text">The CalendAI initiative exemplifies a significant stride in the realm of AI and machine learning, contributing profound insights into human-computer interaction and the development of user-centric software solutions. This project stands as a beacon of interdisciplinary innovation, emphasizing the transformative impact of AI in contemporary technological landscapes.</p>
-    <script src="./script.js"></script>
-
-    <footer>
-        <p>&copy; 2023 by Kinjal Pandey. All rights reserved.</p>
+  <nav>
+    <a href="home.html#about">About</a>
+    <a href="home.html#experience">Experience</a>
+    <a href="home.html#projects">Projects</a>
+    <a href="home.html#contact">Contact</a>
+    <a href="prosthetichand.html">Prosthetic Hand</a>
+    <a href="calendai.html">CalendAI</a>
+    <a href="measmi.html">MeAsmi</a>
+  </nav>
+  
+  <!-- Blog Container for the page content -->
+  <div class="blog-container">
+    <!-- CalendAI Icon -->
+    <div class="icon-container" style="text-align: center; margin-bottom: 1em;">
+      <img src="images/calendai_icon.png" alt="CalendAI Icon" style="max-width: 100px;">
+    </div>
+    
+    <h1>Project Exploration: CalendAI</h1>
+    <h2>Role: Principal Developer</h2>
+    
+    <p>
+      While pursuing a Computer Science degree with a specialization in Artificial Intelligence (AI) and Machine Learning (ML), I spearheaded CalendAI, an innovative initiative under the mentorship of Dr. Andrew Kulak. Created to transform productivity through intelligent scheduling, CalendAI initially targeted students but quickly revealed broad applicability extending into professional environments and everyday productivity scenarios.
+    </p>
+    
+    <h3>Why CalendAI Matters: Filling a Crucial Productivity Gap</h3>
+    <p>
+      Modern life—academic or professional—is defined by countless responsibilities, competing priorities, and a constant struggle for effective time management. Traditional calendar apps lack intelligence, adaptability, and seamless integration, creating significant productivity hurdles:
+      <img src="images/calendai_schedule.png" alt="CalendAI Schedule Example">
+    </p>
+    <ul>
+      <li><strong>Inefficient Scheduling:</strong> Users waste valuable time manually adjusting events and managing competing priorities.</li>
+      <li><strong>Limited Integration:</strong> Fragmented workflows due to calendars that cannot seamlessly connect to professional or academic platforms.</li>
+      <li><strong>No Intelligent Adaptation:</strong> Standard tools fail to learn from user behaviors, missing opportunities for proactive, adaptive scheduling.</li>
+      <li><strong>Information Overload:</strong> Users become overwhelmed by irrelevant reminders rather than actionable, prioritized tasks.</li>
+    </ul>
+    <p>
+      CalendAI directly addresses these universal challenges, creating an intuitive, personalized, and intelligent productivity solution suitable for diverse users.
+    </p>
+    
+    <h3>Beyond Academia: CalendAI’s Multimodal Potential</h3>
+    <p>
+      While CalendAI was initially crafted with students in mind, its robust multimodal integration makes it ideal for professionals across various industries.
+      <img src="images/calendai_layout.png" alt="CalendAI demo layout">
+    </p>
+    <h4>Working Professionals</h4>
+    <ul>
+      <li><strong>Automated Meeting Scheduling:</strong> AI-driven scheduling instantly identifies optimal meeting times, integrating seamlessly with workplace tools such as Slack, Teams, and Outlook.</li>
+      <li><strong>Prioritized Task Management:</strong> Adaptive algorithms highlight critical tasks, helping users manage workloads intelligently based on real-time data and priorities.</li>
+      <li><strong>Reduced Burnout:</strong> Intelligent task prioritization and workload balancing reduce stress and burnout, promoting overall well-being and productivity.</li>
+    </ul>
+    <h4>Entrepreneurs and Freelancers</h4>
+    <ul>
+      <li><strong>Resource Optimization:</strong> CalendAI intelligently suggests optimal task sequences, enhancing productivity and freeing entrepreneurs from micromanagement.</li>
+      <li><strong>Seamless Multitasking:</strong> Multimodal capabilities manage diverse obligations—all within one cohesive interface.</li>
+    </ul>
+    <h4>Enterprises and Organizations</h4>
+    <ul>
+      <li><strong>Enhanced Team Coordination:</strong> Adaptive, AI-based team scheduling ensures smoother collaboration and greater productivity.</li>
+      <li><strong>Advanced Analytics:</strong> Analytics insights help leaders understand workflow bottlenecks and make informed decisions.</li>
+    </ul>
+    
+    <h3>Technical Highlights: The Innovation Behind CalendAI</h3>
+    <p>
+      CalendAI’s technical backbone is designed for scalability, versatility, and ease of use, making its multimodal expansion natural and efficient:
+    </p>
+    <ul>
+      <li><strong>AI-Infused Scheduling Integration:</strong> Built with Express.js, MongoDB, and Prisma, CalendAI supports seamless data exchange with platforms like Canvas, Slack, Zoom, and Outlook.</li>
+      <img src="images/calendai_mongo.png" alt="CalendAI MongoDB Example">
+      <li><strong>Advanced Machine Learning Techniques:</strong> Leveraging ML, the system dynamically analyzes user behavior to provide personalized recommendations via:
+        <ul>
+          <li><em>Behavioral Prediction:</em> Automatically adjusts entries based on user habits.</li>
+          <li><em>Task Prioritization Engine:</em> Dynamically ranks tasks for optimized productivity.</li>
+        </ul>
+      </li>
+      <li><strong>Intuitive User Experience:</strong> Designed with React.js, its minimalist UI—including interactive Kanban-style boards—ensures clarity and ease of use.</li>
+    </ul>
+    
+    <h3>Empirical Validation and User-Centric Design</h3>
+    <p>
+      Over 70 users participated in extensive testing, providing invaluable feedback that shaped CalendAI’s final design. Rigorous evaluations and user feedback loops ensured the product’s adaptability and responsiveness across diverse user groups.
+      <img src="images/calendai_mentimeter.png" alt="CalendAI Poll">
+    </p>
+    
+    <h3>Recognition: KickStart VT Seed Grant Winner</h3>
+    <p>
+      CalendAI’s innovative potential has been formally recognized:<br>
+      <strong>KickStart VT Seed Grant Winner – CalendAI</strong><br>
+      Apex Systems Center for Innovation and Entrepreneurship, November 2024
+      <img src="images/calendai_winner.jpeg" alt="CalendAI Winner!">
+    </p>
+    <p>
+      Being selected as a KickStart VT Seed Grant Winner validated CalendAI’s innovative approach to productivity and supports further development within a vibrant entrepreneurial community.
+    </p>
+    
+    <h3>Why CalendAI Is Essential: Returning to Our Core Vision</h3>
+    <p>
+      CalendAI addresses productivity pain points across academic institutions, workplaces, entrepreneurial ventures, and everyday life:
+    </p>
+    <ul>
+      <li><strong>Personalization at Scale:</strong> AI-driven adaptability ensures a tailored experience for every user.</li>
+      <li><strong>Reducing Cognitive Load:</strong> Automating scheduling tasks lets users focus on strategic and creative endeavors.</li>
+      <li><strong>Universality and Scalability:</strong> Its multimodal integration provides significant productivity improvements in any context.</li>
+    </ul>
+    <p>
+      CalendAI’s innovation represents a fundamental improvement in managing time, energy, and well-being—underscoring the critical need for intelligent scheduling solutions.
+    </p>
+    
+    <h3>Conclusion: The Transformative Potential of CalendAI</h3>
+    <p>
+      CalendAI exemplifies interdisciplinary innovation by seamlessly integrating AI, human-computer interaction, and practical usability to revolutionize productivity. Whether empowering students or streamlining professional workflows, CalendAI transforms everyday productivity into extraordinary outcomes.
+    </p>
+    
+    <h3>Contact & Connect with CalendAI</h3>
+    <p>
+      <strong>Email:</strong> kinjalpandey@vt.edu<br>
+      <strong>Location:</strong> Blacksburg, Virginia<br>
+      <strong>Phone:</strong> 737-320-4973<br>
+      <strong>LinkedIn:</strong> Kinjal Pandey<br>
+      <strong>GitHub:</strong> kinpanvt<br>
+      <strong>Discord:</strong> Join Our Community<br>
+      <strong>Stack Overflow:</strong> Kinjal Pandey
+    </p>
+    
+  </div>
+  
+  <script src="./script.js"></script>
+  <footer>
+    <p>&copy; 2023 by Kinjal Pandey. All rights reserved.</p>
     <a href="https://www.linkedin.com/in/kinjal-pandey-401934195/" target="_blank">LinkedIn</a> |
     <a href="https://github.com/kinpanvt" target="_blank">GitHub</a> |
     <a href="https://discord.gg/vb4TFDjXjC" target="_blank">Discord</a> |
     <a href="https://stackoverflow.com/users/21199552/kinjal-pandey" target="_blank">Stack Overflow</a>
-    </footer>
-
-
+  </footer>
 </body>
-
 </html>
