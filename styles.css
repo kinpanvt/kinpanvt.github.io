@@ -3,59 +3,63 @@ body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     padding-top: 25px;
     padding-bottom: 15px;
-
 }
-/* Apply background color and font family */
+
+/* Global typography and overall background */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fbf3ea;
+    background-color: #1c1c1c; /* Dark grey overall background */
+    color: #d3d3d3; /* Light grey text */
+    line-height: 1.6;
 }
 
-/* Style the header */
+/* Header styling */
 header {
-    background-color: #CF4420;
-    color: #fff;
+    background-color: #800000; /* Maroon */
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
 
-/* Style the navigation bar */
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #630031;
+    background-color: #1c1c1c; /* Matches overall background */
     padding: 0.5em;
 }
 
 nav a {
-    color: #ffffff;
+    color: #FFA500; /* Orange links */
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #800000; /* Maroon on hover */
 }
 
-/* Style the sections */
+/* Main Sections */
 section {
     padding: 2em;
     max-width: 800px;
     margin: 2em auto;
-    background-color: #fff;
+    background-color: #2e2e2e; /* Slightly lighter dark grey for content blocks */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* Add more space between headers and their descriptions */
+/* Space between section headers and descriptions */
 section h2 {
     margin-bottom: 20px;
 }
 
-/* Style the bullet points */
+/* Bullet Points */
 ul {
     list-style: none;
     padding-left: 1em;
@@ -64,18 +68,18 @@ ul {
 ul li:before {
     content: '•';
     margin-right: 10px;
-    color: #CF4420;
+    color: #FFA500; /* Orange bullets */
     font-size: 1.5em;
     line-height: 0.5em;
 }
 
-/* Style each job section */
+/* Job Section Styling */
 .job {
     margin-bottom: 2em;
     padding: 1em;
-    background-color: #fff;
+    background-color: #2e2e2e;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .job h3, .job h4, .job p {
@@ -89,30 +93,31 @@ ul li:before {
 
 .job h4 {
     font-size: 1em;
-    color: #8B4513;
+    color: #FFA500; /* Use orange accent for subheadings */
 }
 
-/* Style the footer */
+/* Footer Styling */
 footer {
-    background-color: #CF4420;
-    color: black;
+    background-color: #800000; /* Maroon */
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
 
-/* Add a 'back to top' button */
+/* Back to Top Button */
 #back-to-top {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #CF4420;
-    color: #fff;
+    background: #FFA500; /* Orange */
+    color: #ffffff;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
 
+/* Utility Classes */
 .padded-paragraph {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -145,7 +150,7 @@ footer {
 .figure-style figcaption {
     text-align: center;
     font-style: italic;
-    color: #666;
+    color: #d3d3d3;
     font-size: 0.9em;
     margin-top: 5px;
 }
@@ -155,7 +160,6 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .left-aligned-img, .figure-style {
         width: 100%;
         margin-right: 0;
@@ -170,7 +174,7 @@ footer {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Orange for dropdown button */
     color: white;
     padding: 8px;
     font-size: 16px;
@@ -188,28 +192,31 @@ footer {
     position: absolute;
     width: 100%;
     max-width: 100%;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #2e2e2e; /* Dark section background */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
     padding: 12px 16px;
+    color: #d3d3d3;
 }
 
-.show { display: block; }
+.show {
+    display: block;
+}
 
 .dropbtn.active::after {
     content: '▲';
 }
+
+/* Positioning for Show Less Button */
 .dropdown-content {
-    /* Existing styles... */
-    position: relative; /* Add this for positioning the Show Less button */
+    position: relative;
 }
 
-/* Style for Show Less button */
 .show-less {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background-color: #4CAF50;
+    background-color: #FFA500;
     color: white;
     padding: 5px 10px;
     font-size: 14px;
@@ -217,6 +224,7 @@ footer {
     cursor: pointer;
 }
 
+/* Course Lists */
 .course-lists {
     display: flex;
     justify-content: space-around;
@@ -232,10 +240,11 @@ footer {
 .course-lists ul li {
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #f2f2f2;
+    background-color: #333333; /* Dark background for list items */
     border-radius: 5px;
 }
 
+/* Licenses Container */
 .licenses-container {
     display: flex;
     justify-content: space-around;
@@ -249,28 +258,19 @@ footer {
 }
 
 .license-item {
-    margin-bottom: 20px; /* Space between each item */
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .license-img {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 100px;
     height: auto;
-    border-radius: 5px; /* Optional, for rounded corners */
-    margin-bottom: 10px; /* Space between image and caption */
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 figcaption {
     margin-bottom: 5px;
-}
-
-section {
-    padding: 2em;
-    max-width: 800px;
-    margin: 2em auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* GitHub Projects */
@@ -279,19 +279,23 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .project-tile {
     width: calc(50% - 20px);
     margin: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #444444;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     text-align: center;
+    background-color: #2e2e2e;
 }
+
 .project-tile img {
     width: 100%;
     height: auto;
 }
+
 @media (max-width: 600px) {
     .project-tile {
         width: 100%;
@@ -301,5 +305,5 @@ section {
 .license-item a {
     display: block;
     text-decoration: none;
-    color: inherit; /* Ensure the text color remains the same */
+    color: inherit;
 }
